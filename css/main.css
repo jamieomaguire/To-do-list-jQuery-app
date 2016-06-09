@@ -542,8 +542,9 @@ input[name="submit"] {
   padding: .55em .75em;
   margin-top: 1.2em;
   border-radius: .15em;
-  -webkit-transition: all ease-in-out 300ms;
-  transition: all ease-in-out 300ms;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
   -webkit-appearance: none;
 }
 
@@ -654,5 +655,10 @@ input[name="submit"]:active {
   }
   .task:last-child {
     margin-bottom: 2em;
+  }
+  .task:hover {
+    -webkit-transform: translate(-5px, -5px);
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 8px -2px #FF4136;
   }
 }
