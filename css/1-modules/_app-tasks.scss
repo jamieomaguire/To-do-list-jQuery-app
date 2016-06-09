@@ -13,8 +13,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     box-shadow: 3px 3px 2px -2px $red;
     margin-bottom: 2em;
     &:last-child {
@@ -24,14 +24,13 @@
         max-width: 65%;
         word-wrap: break-word;
     }
-
     .tools {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         min-width: 2em;
         font-size: 1.8em;
     }
@@ -50,17 +49,16 @@
     -webkit-transition: all ease-in 200ms;
     transition: all ease-in 200ms;
 }
-
 @media (min-width: 600px) {
-    .task-list {;
-        display: -webkit-box;;
-        display: -ms-flexbox;;
+    .task-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
     .task {
         width: 45%;
@@ -72,5 +70,4 @@
             margin-bottom: 2em;
         }
     }
-
 }
