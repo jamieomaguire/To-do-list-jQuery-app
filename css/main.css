@@ -514,6 +514,12 @@ textarea {
   font-size: 2.2em;
 }
 
+@media (min-width: 600px) {
+  .todo-app-header-copy h1 {
+    font-size: 3.5em;
+  }
+}
+
 .todo-app-input-container {
   padding: 1em;
 }
@@ -647,8 +653,8 @@ input[name="submit"]:active {
     justify-content: center;
   }
   .task {
-    width: 45%;
-    min-width: 45%;
+    width: 40%;
+    min-width: 40%;
     max-width: 500px;
     margin-right: 2em;
     margin-left: 2em;

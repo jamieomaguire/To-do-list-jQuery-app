@@ -10,3 +10,9 @@
         font-size: 2.2em;
     }
 }
+
+@media (min-width: 600px) {
+    .todo-app-header-copy h1 {
+        font-size: 3.5em;
+    }
+}
