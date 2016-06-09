@@ -556,6 +556,23 @@ input[name="submit"]:active {
   color: #fff;
 }
 
+@media (min-width: 600px) {
+  .lrg-screen-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 2em;
+  }
+  input[name="task"] {
+    width: 40%;
+  }
+  input[name="submit"] {
+    width: 25%;
+  }
+}
+
 .todo-app-tasks-container {
   padding: 1em;
   color: #333;
@@ -615,4 +632,27 @@ input[name="submit"]:active {
 
 .task .completed {
   text-decoration: line-through;
+}
+
+@media (min-width: 600px) {
+  .task-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .task {
+    width: 45%;
+    min-width: 45%;
+    max-width: 500px;
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+  .task:last-child {
+    margin-bottom: 2em;
+  }
 }

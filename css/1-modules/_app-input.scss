@@ -36,3 +36,20 @@ input[name="submit"]{
         color: #fff;
     }
 }
+
+@media (min-width: 600px) {
+        .lrg-screen-input {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            margin-bottom: 2em;
+        }
+        input[name="task"] {
+            width: 40%;
+        }
+        input[name="submit"] {
+            width: 25%;
+        }
+}

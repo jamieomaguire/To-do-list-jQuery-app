@@ -50,3 +50,27 @@
     -webkit-transition: all ease-in 200ms;
     transition: all ease-in 200ms;
 }
+
+@media (min-width: 600px) {
+    .task-list {;
+        display: -webkit-box;;
+        display: -ms-flexbox;;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .task {
+        width: 45%;
+        min-width: 45%;
+        max-width: 500px;
+        margin-right: 2em;
+        margin-left: 2em;
+        &:last-child {
+            margin-bottom: 2em;
+        }
+    }
+
+}
