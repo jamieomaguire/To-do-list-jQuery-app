@@ -7,10 +7,9 @@
     <meta name="author" content="Jamie Maguire">
     <meta name="description" content="A jQuery powered to do app">
     <title>To do list</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/4bd48dab1a.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
 <body>
@@ -37,24 +36,24 @@
                 <li class="task">
                     <p class="task-copy">Finish editing, designing and the sass partials </p>
                     <div class="tools">
-                        <i class="ion-android-checkbox done"></i>
-                        <i class="ion-android-cancel delete"></i>
+                        <i class="fa fa-check-square done"></i>
+                        <i class="fa fa-times delete"></i>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
 
-<!-- Template of task for jQuery to append -->
+    <!-- Template of task for jQuery to append -->
     <script type="text/template" id="taskTemplate">
         <li class="task">
             <p class="task-copy">{{ task }}</p>
             <div class="tools">
-                <i class="ion-android-checkbox done"></i>
-                <i class="ion-android-cancel delete"></i>
+                <i class="fa fa-check-square done"></i>
+                <i class="fa fa-times delete"></i>
             </div>
         </li>
-</script>
+    </script>
 
     <script src="js/todo.js"></script>
 

@@ -6,10 +6,13 @@ input[name="task"] {
     padding: 1.5em 2em .5em 2em;
     border: none;
     border-bottom: 1px solid $red;
+    border-radius: 0;
+    -webkit-transition: all ease-in-out 250ms;
     transition: all ease-in-out 250ms;
     &:focus {
         outline: none;
         box-shadow: 0 4px 4px -2px $red;
+        -webkit-appearance: none;
     }
 }
 
@@ -22,7 +25,9 @@ input[name="submit"]{
     padding: .55em .75em;
     margin-top: 1.2em;
     border-radius: .15em;
+    -webkit-transition: all ease-in-out 300ms;
     transition: all ease-in-out 300ms;
+    -webkit-appearance: none;
     &:focus {
         outline: 0;
     }

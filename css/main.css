@@ -522,12 +522,15 @@ input[name="task"] {
   padding: 1.5em 2em .5em 2em;
   border: none;
   border-bottom: 1px solid #FF4136;
+  border-radius: 0;
+  -webkit-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
 }
 
 input[name="task"]:focus {
   outline: none;
   box-shadow: 0 4px 4px -2px #FF4136;
+  -webkit-appearance: none;
 }
 
 input[name="submit"] {
@@ -539,7 +542,9 @@ input[name="submit"] {
   padding: .55em .75em;
   margin-top: 1.2em;
   border-radius: .15em;
+  -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
+  -webkit-appearance: none;
 }
 
 input[name="submit"]:focus {
@@ -552,8 +557,8 @@ input[name="submit"]:active {
 }
 
 .todo-app-tasks-container {
-  padding: 1.2em;
-  color: #001F3F;
+  padding: 1em;
+  color: #333;
 }
 
 .task-list {
@@ -562,23 +567,42 @@ input[name="submit"]:active {
 
 .task {
   list-style-type: none;
-  padding: 1em 0.5em;
+  padding: 0.7em;
+  min-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   box-shadow: 3px 3px 2px -2px #FF4136;
   margin-bottom: 2em;
+  -webkit-transition: all ease-in 200ms;
+  transition: all ease-in 200ms;
 }
 
 .task:last-child {
-  margin-bottom: 0;
+  margin-bottom: 2.5em;
+}
+
+.task .task-copy {
+  max-width: 65%;
+  word-wrap: break-word;
 }
 
 .task .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   min-width: 2em;
-  margin-left: .4em;
-  font-size: 2em;
+  font-size: 1.8em;
+}
+
+.task .fa {
+  cursor: pointer;
 }
 
 .task .done {

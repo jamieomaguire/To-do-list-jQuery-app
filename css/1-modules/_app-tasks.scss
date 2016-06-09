@@ -1,26 +1,42 @@
 .todo-app-tasks-container {
-    padding: 1.2em;
-    color: $navy;
+    padding: 1em;
+    color: #333;
 }
 .task-list {
     text-align: left;
 }
 .task {
     list-style-type: none;
-    padding: 1em 0.5em;
+    padding: 0.7em;
+    min-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     box-shadow: 3px 3px 2px -2px $red;
     margin-bottom: 2em;
     &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 2.5em;
     }
+    .task-copy {
+        max-width: 65%;
+        word-wrap: break-word;
+    }
+
     .tools {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         min-width: 2em;
-        margin-left: .4em;
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+    .fa {
+        cursor: pointer;
     }
     .done {
         color: $green;
@@ -31,4 +47,6 @@
     .completed {
         text-decoration: line-through;
     }
+    -webkit-transition: all ease-in 200ms;
+    transition: all ease-in 200ms;
 }
