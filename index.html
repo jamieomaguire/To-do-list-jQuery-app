@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="row todo-app-header-container bg-red-gradient">
+    <header class="row todo-app-header-container bg-red-gradient">
         <div class="col-12">
             <header class="todo-app-header-copy">
                 <h1>To Do List</h1>
@@ -21,7 +21,7 @@
                 <h3>By Jamie Maguire</h3>
             </header>
         </div>
-    </div>
+    </header>
 
     <div class="row todo-app-input-container">
         <div class="col-12" id="lrg-screen-input">
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="row todo-app-tasks-container">
+    <main role="main" class="row todo-app-tasks-container">
         <div class="col-12">
             <ul class="task-list">
                 <li class="task">
@@ -42,7 +42,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </main>
 
     <!-- Template of task for jQuery to append -->
     <script type="text/template" id="taskTemplate">

@@ -22,6 +22,7 @@
     }
     .task-copy {
         max-width: 65%;
+        line-height: 25px;
         word-wrap: break-word;
     }
     .tools {
@@ -74,5 +75,14 @@
               transform: translate(-5px, -5px);
               box-shadow: 5px 5px 8px -2px $red;
         }
+    }
+    .task-copy {
+        min-width: 75%;
+    }
+    .tools {
+        width: 3em;
+    }
+    .tools > .fa {
+        font-size: 1.5em;
     }
 }
